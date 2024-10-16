@@ -1,0 +1,15 @@
+{
+    "name": "azuriom/filemanager",
+    "type": "azuriom-plugin",
+    "description": "Plugin for Azuriom",
+    "autoload": {
+        "psr-4": {
+            "Azuriom\\Plugin\\FileManager\\": "src/"
+        }
+    },
+    "replace": {
+    },
+    "require": {
+        "barryvdh/laravel-elfinder": "^0.5.3"
+    }
+}

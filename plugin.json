@@ -1,0 +1,15 @@
+{
+    "id": "filemanager",
+    "name": "FileManager",
+    "description": "Manager your files and folders.",
+    "version": "1.0.0",
+    "url": "https://github.com/Riptiaz",
+    "authors": [
+        "Riptiaz"
+    ],
+    "azuriom_api": "1.1.0",
+    "providers": [
+        "\\Azuriom\\Plugin\\FileManager\\Providers\\FileManagerServiceProvider",
+        "\\Azuriom\\Plugin\\FileManager\\Providers\\RouteServiceProvider"
+    ]
+}
