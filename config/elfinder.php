@@ -1,7 +1,7 @@
 <?php
 return array (
     'dir' => array (
-        0 => 'storage/',
+        0 => 'storage/app/public',
     ),
     'disks' => array (
     ),
@@ -13,7 +13,7 @@ return array (
     'roots' => array(
         array(
             'driver'     => 'LocalFileSystem',
-            'path'       => 'storage/',
+            'path'       => storage_path('app/public'),
             'URL'        => url('storage'),
             'alias'      => 'Storage',
             'mimeDetect' => 'internal',
@@ -44,7 +44,11 @@ return array (
                 array(
                     'pattern' => '!^/_thumbs!',
                     'hidden' => true
-                )
+                ),
+                array(
+                    'pattern' => '/thumbnails/',  // Hide the thumbnails folder as requested
+                    'hidden' => true
+                ),
             ),
         ),
     ),
