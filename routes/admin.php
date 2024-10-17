@@ -3,7 +3,7 @@
 use Azuriom\Plugin\FileManager\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Route;
 use Barryvdh\Elfinder\ElfinderController;
-use Azuriom\Plugin\FileManager\Controllers\Admin\ConfigController; // Correction: ajout du point-virgule
+use Azuriom\Plugin\FileManager\Controllers\Admin\ConfigController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +19,6 @@ use Azuriom\Plugin\FileManager\Controllers\Admin\ConfigController; // Correction
 Route::get('/', function () {
     return view('filemanager::admin.file-manager');
 })->name('filemanager');
-
-// Correction des routes vers ConfigController
-Route::get('config', [ConfigController::class, 'editConfig'])->name('config');
-Route::post('config', [ConfigController::class, 'updateConfig'])->name('updateConfig');
-
 
 Route::prefix('elfinder')->group(function () {
     Route::get('/', [ElfinderController::class, 'showIndex'])->name('elfinder.index');

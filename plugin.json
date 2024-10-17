@@ -5,7 +5,8 @@
     "version": "1.0.0",
     "url": "https://github.com/Riptiaz",
     "authors": [
-        "Riptiaz"
+        "Riptiaz",
+        "CentralCorp"
     ],
     "azuriom_api": "1.1.0",
     "providers": [

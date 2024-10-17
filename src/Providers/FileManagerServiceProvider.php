@@ -87,17 +87,12 @@ class FileManagerServiceProvider extends BasePluginServiceProvider
      */
     protected function adminNavigation(): array
     {
-        return [
-        'filemanager' => [
-            'type' => 'dropdown',
-            'name' => 'File Manager',
-            'icon' => 'bi bi-folder',
-            'route' => 'filemanager.admin.*',
-            'items' => [
-                'filemanager.admin.filemanager' => trans('filemanager::admin.file-manager'),
-                'filemanager.admin.config' => trans('filemanager::admin.config'),
-            ],
-        ],
+         return [
+             'filemanager' => [
+                 'name' => trans('filemanager::admin.file-manager'),
+                 'icon' => 'bi bi-folder',
+                 'route' => 'filemanager.admin.filemanager',
+             ],
     ];
     }
 

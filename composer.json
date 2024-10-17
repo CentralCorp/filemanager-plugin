@@ -8,8 +8,29 @@
         }
     },
     "replace": {
+        "carbonphp/carbon-doctrine-types": "*",
+        "doctrine/inflector": "*",
+        "illuminate/collections": "*",
+        "illuminate/conditionable": "*",
+        "illuminate/contracts": "*",
+        "illuminate/macroable": "*",
+        "illuminate/support": "*",
+        "league/flysystem": "*",
+        "league/flysystem-local": "*",
+        "league/mime-type-detection": "*",
+        "nesbot/carbon": "*",
+        "psr/clock": "*",
+        "psr/container": "*",
+        "psr/log": "*",
+        "psr/simple-cache": "*",
+        "symfony/clock": "*",
+        "symfony/polyfill-mbstring": "*",
+        "symfony/polyfill-php83": "*",
+        "symfony/translation": "*",
+        "symfony/translation-contracts": "*",
+        "voku/portable-ascii": "*"
     },
     "require": {
-        "barryvdh/laravel-elfinder": "^0.5.3"
+        "barryvdh/laravel-elfinder": "*"
     }
 }

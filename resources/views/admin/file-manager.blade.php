@@ -1,8 +1,8 @@
 @extends('admin.layouts.admin')
 
-@section('title', 'Gestionnaire de fichiers')
+@section('title', 'File Manager')
 
-@section('page-title', 'Gestionnaire de fichiers')
+@section('page-title', 'File Manager')
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
@@ -17,7 +17,7 @@
             customData: {
                 _token: '<?= csrf_token() ?>'
             },
-            url : '<?= route("filemanager.admin.elfinder.connector") ?>',  // connector URL
+            url : '<?= route("filemanager.admin.elfinder.connector") ?>',
         });
     });
 </script>
